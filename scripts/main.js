@@ -19,6 +19,13 @@ const works = [
     url: "https://piggest.github.io/english-quiz/",
   },
   {
+    title: "漢字クイズ",
+    platform: "web",
+    tag: "Quiz",
+    description: "漢字を出題するシンプルなクイズアプリ。",
+    url: "https://piggest.github.io/kanji-quiz/",
+  },
+  {
     title: "テスト回答欄作成ツール",
     platform: "web",
     tag: "Tool",
