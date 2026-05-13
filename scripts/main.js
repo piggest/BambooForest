@@ -9,7 +9,7 @@ const PLATFORMS = {
   windows: { label: "Windows", icon: "icon-monitor" },
 };
 
-// 作品データ。後で追加していく。
+// プロダクトデータ。後で追加していく。
 const works = [
   {
     title: "Mas",
@@ -50,7 +50,7 @@ const works = [
   },
 ];
 
-// プレースホルダーカードを 4 枚埋めておく（作品が増えたら works を増やすだけ）
+// プレースホルダーカードを 4 枚埋めておく（プロダクトが増えたら works を増やすだけ）
 const PLACEHOLDER_COUNT = 4;
 
 const grid = document.getElementById("works-grid");
