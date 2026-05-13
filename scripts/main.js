@@ -12,6 +12,22 @@ const PLATFORMS = {
 // 作品データ。後で追加していく。
 const works = [
   {
+    title: "Mas",
+    platform: "mac",
+    tag: "App",
+    description: "まるでマスですくうように。macOS 向けスクリーンショット & 注釈アプリ。",
+    url: "https://piggest.github.io/Mas/",
+    icon: "assets/mas.png",
+  },
+  {
+    title: "FairyOperator",
+    platform: "mac",
+    tag: "App",
+    description: "macOS の入力・ウインドウ・Dock 操作を妖精たちが手伝う道具箱。",
+    url: "https://piggest.github.io/FairyOperator-releases/",
+    icon: "assets/fairyoperator.png",
+  },
+  {
     title: "英単語クイズ",
     platform: "web",
     tag: "Quiz",
@@ -31,22 +47,6 @@ const works = [
     tag: "Tool",
     description: "テストの回答欄を手早く作成するツール。",
     url: "https://piggest.github.io/test-form-creator/",
-  },
-  {
-    title: "Mas",
-    platform: "mac",
-    tag: "App",
-    description: "まるでマスですくうように。macOS 向けスクリーンショット & 注釈アプリ。",
-    url: "https://piggest.github.io/Mas/",
-    icon: "assets/mas.png",
-  },
-  {
-    title: "FairyOperator",
-    platform: "mac",
-    tag: "App",
-    description: "macOS の入力・ウインドウ・Dock 操作を妖精たちが手伝う道具箱。",
-    url: "https://piggest.github.io/FairyOperator-releases/",
-    icon: "assets/fairyoperator.png",
   },
 ];
 
