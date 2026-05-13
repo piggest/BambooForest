@@ -274,18 +274,32 @@ ul { list-style: none; padding: 0; margin: 0; }
   background: rgba(220, 228, 240, 0.6);
 }
 .work-card-head {
-  display: flex;
-  align-items: center;
-  gap: 12px;
   margin: 0 0 10px;
 }
+.work-card-head:has(.work-card-icon) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  margin: 8px 0 14px;
+  text-align: center;
+}
 .work-card-icon {
-  width: 44px;
-  height: 44px;
-  border-radius: 10px;
+  width: 96px;
+  height: 96px;
+  border-radius: 22px;
   flex-shrink: 0;
   object-fit: cover;
-  box-shadow: 0 2px 8px rgba(64, 80, 60, 0.12);
+  box-shadow:
+    0 14px 32px rgba(64, 80, 60, 0.18),
+    0 2px 6px rgba(64, 80, 60, 0.12);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.work-card:hover .work-card-icon {
+  transform: translateY(-3px) scale(1.04);
+  box-shadow:
+    0 20px 40px rgba(64, 80, 60, 0.22),
+    0 4px 10px rgba(64, 80, 60, 0.14);
 }
 .work-card-title {
   font-family: var(--font-display);
