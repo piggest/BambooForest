@@ -32,6 +32,20 @@ const works = [
     description: "テストの回答欄を手早く作成するツール。",
     url: "https://piggest.github.io/test-form-creator/",
   },
+  {
+    title: "Mas",
+    platform: "mac",
+    tag: "App",
+    description: "まるでマスですくうように。macOS 向けスクリーンショット & 注釈アプリ。",
+    url: "https://piggest.github.io/Mas/",
+  },
+  {
+    title: "FairyOperator",
+    platform: "mac",
+    tag: "App",
+    description: "macOS の入力・ウインドウ・Dock 操作を妖精たちが手伝う道具箱。",
+    url: "https://piggest.github.io/FairyOperator-releases/",
+  },
 ];
 
 // プレースホルダーカードを 4 枚埋めておく（作品が増えたら works を増やすだけ）
