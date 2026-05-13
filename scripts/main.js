@@ -38,6 +38,7 @@ const works = [
     tag: "App",
     description: "まるでマスですくうように。macOS 向けスクリーンショット & 注釈アプリ。",
     url: "https://piggest.github.io/Mas/",
+    icon: "assets/mas.png",
   },
   {
     title: "FairyOperator",
@@ -45,6 +46,7 @@ const works = [
     tag: "App",
     description: "macOS の入力・ウインドウ・Dock 操作を妖精たちが手伝う道具箱。",
     url: "https://piggest.github.io/FairyOperator-releases/",
+    icon: "assets/fairyoperator.png",
   },
 ];
 
@@ -63,10 +65,16 @@ function renderCard(work) {
          ${p.label}
        </span>`
     : "";
+  const iconHtml = work.icon
+    ? `<img class="work-card-icon" src="${work.icon}" alt="" loading="lazy" />`
+    : "";
   li.innerHTML = `
     ${platformBadge}
     <span class="work-card-tag">${work.tag ?? "Work"}</span>
-    <h3 class="work-card-title">${work.title}</h3>
+    <div class="work-card-head">
+      ${iconHtml}
+      <h3 class="work-card-title">${work.title}</h3>
+    </div>
     <p class="work-card-desc">${work.description ?? ""}</p>
     ${work.url ? `<a class="work-card-link" href="${work.url}" rel="noopener">見る</a>` : ""}
   `;
