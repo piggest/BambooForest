@@ -54,7 +54,7 @@ const works = [
     tag: "Shop",
     description: "オリジナルグッズを販売中。Tシャツ、ステッカーなど SUZURI で展開。",
     url: "https://suzuri.jp/piggest0965",
-    icon: "assets/suzuri.jpg",
+    icon: "assets/suzuri.png",
   },
 ];
 
