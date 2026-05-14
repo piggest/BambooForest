@@ -48,6 +48,14 @@ const works = [
     description: "テストの回答欄を手早く作成するツール。",
     url: "https://piggest.github.io/test-form-creator/",
   },
+  {
+    title: "ぴぎー SUZURI Shop",
+    platform: "web",
+    tag: "Shop",
+    description: "オリジナルグッズを販売中。Tシャツ、ステッカーなど SUZURI で展開。",
+    url: "https://suzuri.jp/piggest0965",
+    icon: "assets/suzuri.jpg",
+  },
 ];
 
 // プレースホルダーカードを 4 枚埋めておく（プロダクトが増えたら works を増やすだけ）
