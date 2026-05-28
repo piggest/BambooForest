@@ -509,6 +509,20 @@ a.contact-card-value:hover { color: var(--pink-deep); }
 }
 .contact-card.is-soon .contact-card-value { color: var(--green-mid); }
 
+/* Buy Me a Coffee は少しピンク寄りでサポート感を出す */
+.contact-card--bmc {
+  background: linear-gradient(180deg, rgba(244, 212, 212, 0.32), var(--bg-mist));
+  border-color: rgba(232, 168, 168, 0.5);
+}
+.contact-card--bmc .contact-card-icon {
+  color: var(--pink-deep);
+  border-color: var(--pink-mid);
+  background: rgba(244, 212, 212, 0.35);
+}
+.contact-card--bmc:hover {
+  border-color: var(--pink-mid);
+}
+
 @media (max-width: 768px) {
   .contact { padding: 60px 20px 40px; }
 }
