@@ -73,9 +73,10 @@ function renderCard(work) {
          ${p.label}
        </span>`
     : "";
-  const iconHtml = work.icon
-    ? `<img class="work-card-icon" src="${work.icon}" alt="" loading="lazy" />`
-    : "";
+  // アイコン未設定の作品には点線の筍をプレースホルダーとして表示
+  const iconSrc = work.icon ?? "assets/placeholder.png";
+  const iconClass = work.icon ? "work-card-icon" : "work-card-icon placeholder-icon";
+  const iconHtml = `<img class="${iconClass}" src="${iconSrc}" alt="" loading="lazy" />`;
   li.innerHTML = `
     ${platformBadge}
     <span class="work-card-tag">${work.tag ?? "Work"}</span>

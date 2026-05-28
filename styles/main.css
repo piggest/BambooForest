@@ -388,6 +388,26 @@ ul { list-style: none; padding: 0; margin: 0; }
 .work-card.is-placeholder .work-card-desc {
   color: var(--green-mid);
 }
+/* 点線の筍プレースホルダーアイコン（アイコン未設定の作品用） */
+.placeholder-icon {
+  box-shadow: none;
+  mix-blend-mode: multiply;
+  opacity: 0.75;
+  border-radius: 0;
+  animation-duration: 8s;
+}
+.work-card:hover .placeholder-icon {
+  box-shadow: none;
+}
+/* 点線筍に光輪はやり過ぎなので柔らかい緑に差し替え */
+.work-card-head:has(.placeholder-icon)::before {
+  background: radial-gradient(
+    closest-side,
+    rgba(138, 165, 122, 0.18),
+    rgba(232, 239, 226, 0.12) 50%,
+    transparent 78%
+  );
+}
 
 /* 地下茎の演出 */
 .rhizome {
