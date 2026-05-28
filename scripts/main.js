@@ -49,6 +49,14 @@ const works = [
     url: "https://piggest.github.io/test-form-creator/",
   },
   {
+    title: "CocktailShelf",
+    platform: "web",
+    tag: "App",
+    description: "カクテルのレシピを集めた棚。気分やお酒から探せる Web アプリ。",
+    url: "https://piggest.github.io/CocktailShelf/",
+    icon: "assets/cocktailshelf.svg",
+  },
+  {
     title: "ぴぎー SUZURI Shop",
     platform: "web",
     tag: "Shop",
